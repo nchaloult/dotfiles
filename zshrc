@@ -104,3 +104,7 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # go
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+
+# solar
+# . /Users/nick/solar/tiva-toolchain/tivasdk_profile.bash
+# . /Users/nick/solar/tiva-toolchain/tivasdk_aliases.bash
