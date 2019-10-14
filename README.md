@@ -1,6 +1,6 @@
 # Nick's Dotfiles & Configs
 
-If/when I'm working on a new Mac, or a Mac that isn't mine, I can quickly clone this repo and experience the comfort of familiar configs thanks to the power of symlinks 😎
+For use when setting up a new Mac.
 
 ## Setting Up
 
