@@ -11,6 +11,9 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-commentary'
 
+  Plug 'Shougo/deoplete.nvim'
+  let g:deoplete#enable_at_startup = 1
+
 " Syntax
   Plug 'pangloss/vim-javascript'
 

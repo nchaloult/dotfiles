@@ -35,6 +35,9 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.g
 # Now install plugins specified in init.vim with vim-plug
 nvim -c 'PlugInstall' -c 'qa'
 
+# Deoplete needs python3 support in neovim
+pip3 install --user pynvim
+
 # Wire up iterm2 preferences
 # http://stratus3d.com/blog/2015/02/28/sync-iterm2-profile-with-dotfiles-repository/
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/dotfiles/iterm2"
