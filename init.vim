@@ -65,8 +65,10 @@ set tabstop=2 shiftwidth=2 expandtab smarttab autoindent
 autocmd FileType markdown set sw=4 ts=4
 autocmd FileType py set sw=4 ts=4
 autocmd FileType java set sw=4 ts=4
-autocmd FileType c set sw=4 ts=4
 autocmd FileType go set sw=4 ts=4
+" C configs in accordance with the linux kernel style guide.
+" https://kernelnewbies.org/FirstKernelPatch
+autocmd FileType c set tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
 
 " Navigation with guides
 inoremap <c-j> <Esc>/<++><Enter>"_c4l
