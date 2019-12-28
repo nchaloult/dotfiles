@@ -13,6 +13,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 
   Plug 'Shougo/deoplete.nvim'
   let g:deoplete#enable_at_startup = 1
+  Plug 'deoplete-plugins/deoplete-go', { 'do': 'make' }
 
 " Syntax
   Plug 'pangloss/vim-javascript'
