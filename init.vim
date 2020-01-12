@@ -59,16 +59,10 @@ syntax enable
 set background=dark
 colorscheme gruvbox
 
-set tabstop=2 shiftwidth=2 expandtab smarttab autoindent
-
-" When in a particular file type, set tab stops to 4
-autocmd FileType markdown set sw=4 ts=4
-autocmd FileType py set sw=4 ts=4
-autocmd FileType java set sw=4 ts=4
-autocmd FileType go set sw=4 ts=4
+set tabstop=4 shiftwidth=4 noexpandtab
 " C configs in accordance with the linux kernel style guide.
 " https://kernelnewbies.org/FirstKernelPatch
-autocmd FileType c set tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
+autocmd FileType c set tabstop=8 shiftwidth=8
 
 " Navigation with guides
 inoremap <c-j> <Esc>/<++><Enter>"_c4l
