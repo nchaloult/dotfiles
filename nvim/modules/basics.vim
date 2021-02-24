@@ -1,4 +1,5 @@
 filetype plugin on
+set title
 set encoding=utf-8
 set linebreak
 set number
