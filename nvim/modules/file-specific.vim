@@ -10,3 +10,5 @@ autocmd FileType javascript set tabstop=2 shiftwidth=2
 autocmd FileType json set tabstop=2 shiftwidth=2
 autocmd FileType typescript set tabstop=2 shiftwidth=2
 autocmd FileType yaml set tabstop=2 shiftwidth=2
+
+autocmd FileType markdown set spell
