@@ -136,3 +136,4 @@ export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
 
 # Laravel
 alias ar="php artisan"
+export PATH="$PATH:$HOME/.composer/vendor/bin"
