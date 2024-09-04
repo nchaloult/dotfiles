@@ -113,7 +113,6 @@ export PATH="$PATH:/Users/npc/bin"
 # gcloud
 source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
 
-alias l="exa -la"
 alias vim="nvim"
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 
