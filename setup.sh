@@ -23,3 +23,6 @@ ln -sf $DOTFILES_ABS_PATH/tmux/tmux.conf $HOME/.tmux.conf
 
 rm -rf $HOME/.config/nvim
 ln -s $DOTFILES_ABS_PATH/nvim $HOME/.config/nvim
+
+mkdir -p $HOME/.config/jj
+ln -sf $DOTFILES_ABS_PATH/jj/config.toml $HOME/.config/jj/config.toml

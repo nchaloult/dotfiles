@@ -1,0 +1,7 @@
+[user]
+name = "Nick Chaloult"
+email = "npchaloult@gmail.com"
+                               
+[ui]
+default-command = "log"
+editor = "nvim"
