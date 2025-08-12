@@ -47,8 +47,6 @@ return {
     },
   },
   { "akinsho/bufferline.nvim", version = "*" },
-  { "lewis6991/gitsigns.nvim" },
-  { "tpope/vim-fugitive", dependencies = "tpope/vim-rhubarb" },
   {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",

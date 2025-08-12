@@ -12,10 +12,6 @@ vim.keymap.set("n", "<leader>s", builtin.lsp_document_symbols, {})
 -- Tree triggers.
 vim.keymap.set("n", "<leader>e", ":NvimTreeFindFileToggle<CR>")
 
--- Git integration.
-vim.keymap.set("n", "<leader>hb", ":Gitsigns blame_line<CR>")
-vim.keymap.set("n", "<leader>hl", ":GBrowse<CR>")
-
 -- LSP-related keybinds.
 vim.keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>")
 vim.keymap.set("n", "gi", ":Telescope lsp_implementations<CR>")

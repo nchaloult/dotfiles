@@ -4,7 +4,6 @@ vim.cmd [[ colorscheme gruvbox ]]
 
 -- The following plugins need to have their setup() funcs explicitly called.
 require("bufferline").setup()
-require("gitsigns").setup()
 require("nvim-treesitter.configs").setup({
     ensure_installed = "all",
     highlight = {
@@ -61,10 +60,5 @@ vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.undofile = true
 vim.opt.confirm = true
-
--- The gitsigns plugin adds info in the gutter, or first column. This flashes in
--- and out when you're working. This tells vim to render that left-hand gutter
--- column no matter what, which prevents that flashing.
-vim.opt.signcolumn = "yes:1"
 
 vim.opt.completeopt = "menuone,longest,preview"
