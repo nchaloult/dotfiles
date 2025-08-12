@@ -128,7 +128,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # May have to change this whenever a new version of fzf comes out, and
 # you run brew update && brew upgrade? I'm worried about that hard coded
 # 0.44.1 dir in there.
-source /opt/homebrew/Cellar/fzf/0.55.0/shell/key-bindings.zsh
+source /opt/homebrew/Cellar/fzf/0.62.0/shell/key-bindings.zsh
 
 # Use the SQLite version you installed from Homebrew (which you can load
 # extensions with!) instead of the binary shipped with macOS.
