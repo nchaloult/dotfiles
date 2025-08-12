@@ -104,7 +104,7 @@ bindkey -v
 # $PATH additions
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
-export PATH="$PATH:/Users/npc/bin"
+export PATH="$PATH:$HOME/bin"
 
 # gcloud
 source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
