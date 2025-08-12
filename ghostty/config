@@ -1,8 +1,5 @@
 theme = GruvboxDark
-# theme = GruvboxLight
+# theme = GruvboxLightHard
 
 font-size = 12
 font-family = JetBrains Mono
-# font-thicken = true
-
-cursor-style-blink = false
