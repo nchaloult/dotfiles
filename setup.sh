@@ -9,24 +9,15 @@ fi
 DOTFILES_ABS_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Install the following programs, or update them if they're already installed.
-brew install --cask wezterm
+brew install --cask ghostty
 brew install neovim tmux ripgrep fd
-
-# Install a copy of the wezterm terminfo file. Neovim and tmux, at least, both
-# use this to render undercurls.
-#
-# https://wezfurlong.org/wezterm/faq.html#how-do-i-enable-undercurl-curly-underlines
-rm -rf $HOME/.terminfo
-tempfile=$(mktemp) \
-  && curl -o $tempfile https://raw.githubusercontent.com/wez/wezterm/master/termwiz/data/wezterm.terminfo \
-  && tic -x -o ~/.terminfo $tempfile \
-  && rm $tempfile
 
 # Copy config files in their expected locations.
 
 ln -sf $DOTFILES_ABS_PATH/zsh/zshrc $HOME/.zshrc
 
-ln -sf $DOTFILES_ABS_PATH/wezterm/wezterm.lua $HOME/.wezterm.lua
+mkdir -p $HOME/.config/ghostty
+ln -sf $DOTFILES_ABS_PATH/ghostty/config $HOME/.config/ghostty/config
 
 ln -sf $DOTFILES_ABS_PATH/tmux/tmux.conf $HOME/.tmux.conf
 

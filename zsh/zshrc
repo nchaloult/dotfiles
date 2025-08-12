@@ -84,10 +84,6 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-# Let programs which respect terminfo (neovim, tmux, etc.) know you're using
-# wezterm.
-export TERM='wezterm'
-
 # Preferred editor for local and remote sessions
 export EDITOR='vim'
 
