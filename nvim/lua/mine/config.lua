@@ -19,27 +19,6 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protoc
 require("lspconfig").intelephense.setup({ capabilities = capabilities })
 require("lspconfig").eslint.setup({ capabilities = capabilities }) -- JavaScript & TypeScript.
 require("lspconfig").tailwindcss.setup({ capabilities = capabilities })
-require("null-ls").setup({
-    sources = {
-        require("null-ls").builtins.diagnostics.eslint_d.with({
-            condition = function(utils)
-                return utils.root_has_file({ '.eslintrc.js', '.eslintrc' })
-            end,
-        }),
-        require("null-ls").builtins.diagnostics.trail_space.with({ disabled_filetypes = { 'NvimTree' } }),
-        require("null-ls").builtins.formatting.eslint_d.with({
-            condition = function(utils)
-                return utils.root_has_file({ '.eslintrc.js', '.eslintrc.json', '.eslintrc' })
-            end,
-        }),
-        require("null-ls").builtins.formatting.prettier.with({
-            condition = function(utils)
-                return utils.root_has_file({ '.prettierrc', '.prettierrc.json', '.prettierrc.yml', '.prettierrc.js', 'prettier.config.js' })
-            end,
-        }),
-    },
-})
-require('mason-null-ls').setup({ automatic_installation = true })
 
 vim.opt.colorcolumn = "72,80,88"
 vim.opt.linebreak = true
