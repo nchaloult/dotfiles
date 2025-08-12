@@ -135,5 +135,7 @@ source /opt/homebrew/Cellar/fzf/0.55.0/shell/key-bindings.zsh
 export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
 
 # Laravel
-alias pa="php artisan"
 export PATH="$PATH:$HOME/.composer/vendor/bin"
+
+alias pa="php artisan"
+alias pamfs="php artisan migrate:fresh --seed"
