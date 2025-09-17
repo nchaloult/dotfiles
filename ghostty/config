@@ -1,5 +1,5 @@
-theme = GruvboxDark
-# theme = GruvboxLightHard
+theme = Gruvbox Dark
+# theme = Gruvbox Light Hard
 
 font-size = 12
 font-family = JetBrains Mono
