@@ -13,12 +13,18 @@ require("nvim-treesitter.configs").setup({
 require("mason").setup()
 require("mason-lspconfig").setup({ automatic_installation = true })
 
-local capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
+local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 -- Individual LSP servers.
-require("lspconfig").intelephense.setup({ capabilities = capabilities })
-require("lspconfig").eslint.setup({ capabilities = capabilities }) -- JavaScript & TypeScript.
-require("lspconfig").tailwindcss.setup({ capabilities = capabilities })
+vim.lsp.config.intelephense = {
+  filetypes = { 'php' },
+  capabilities = capabilities,
+}
+vim.lsp.config.eslint = {
+  filetypes = { 'javascript', 'javascriptreact', 'javascript.jsx', 'typescript', 'typescriptreact', 'typescript.tsx', 'astro' },
+  capabilities = capabilities,
+}
+vim.lsp.config.tailwindcss = { capabilities = capabilities } -- TODO: Might need to explicitly specify filetypes.
 
 vim.opt.colorcolumn = "72,80,88"
 vim.opt.linebreak = true
